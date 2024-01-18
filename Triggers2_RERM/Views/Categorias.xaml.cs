@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Triggers2_RERM.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,7 @@ namespace Triggers2_RERM.Views
         public Categorias()
         {
             InitializeComponent();
+            BindingContext = new VMCategoris(Navigation);
         }
     }
 }
