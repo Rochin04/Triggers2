@@ -1,0 +1,15 @@
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Triggers2_RERM.csproj.AssemblyReference.cache
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Triggers2_RERM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Triggers2_RERM.AssemblyInfoInputs.cache
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Triggers2_RERM.AssemblyInfo.cs
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Triggers2_RERM.csproj.CoreCompileInputs.cache
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\bin\Debug\netstandard2.0\Triggers2_RERM.deps.json
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\bin\Debug\netstandard2.0\Triggers2_RERM.dll
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\bin\Debug\netstandard2.0\ref\Triggers2_RERM.dll
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\bin\Debug\netstandard2.0\Triggers2_RERM.pdb
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Views\Categorias.xaml.g.cs
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Triggers2_RERM.dll
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\refint\Triggers2_RERM.dll
+C:\Users\emiro\source\repos\Triggers2_RERM\Triggers2_RERM\obj\Debug\netstandard2.0\Triggers2_RERM.pdb
