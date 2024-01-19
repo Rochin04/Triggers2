@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:disparador="clr-namespace:Triggers2_RERM.Triggers.TCategoria"
+             x:Name="ListaCategoria"
              x:Class="Triggers2_RERM.Views.Categorias">
     <Grid RowDefinitions="auto,*" BackgroundColor="White">
         <StackLayout HeightRequest="180" Margin="10">
@@ -16,12 +18,29 @@
                             <Frame Margin="0,5,5,5" Padding="8" BackgroundColor="{Binding backgroundColor}" CornerRadius="35" HeightRequest="50" WidthRequest="135" HasShadow="False" VerticalOptions="Center">
                                 <Grid ColumnDefinitions="auto,*" RowSpacing="0" VerticalOptions="Center">
                                     <BoxView BackgroundColor="White" CornerRadius="25" HeightRequest="50" WidthRequest="50"/>
-                                    <Image Source="{Binding images}" HeightRequest="35" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" WidthRequest="35"/>
+                                    <Image Source="{Binding images}" HeightRequest="35" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" WidthRequest="35">
+                                        <Image.Triggers>
+                                            <MultiTrigger TargetType="Image">
+                                                <MultiTrigger.Conditions>
+                                                    <BindingCondition Binding="{Binding ActivitiAnimationImg}" Value="True"/>
+                                                </MultiTrigger.Conditions>
+                                                <MultiTrigger.EnterActions>
+                                                    <disparador:TImagen activacion="True"/>
+                                                </MultiTrigger.EnterActions>
+                                                <MultiTrigger.ExitActions>
+                                                    <disparador:TImagen activacion="False"/>
+                                                </MultiTrigger.ExitActions>
+                                            </MultiTrigger>
+                                        </Image.Triggers>
+                                    </Image>
                                     <StackLayout Grid.Column="1">
                                         <Label Text="{Binding description}" FontSize="16" VerticalOptions="Start" TextColor="{Binding textColor}"/>
                                         <Label Text="{Binding numberItem}" FontSize="9" VerticalOptions="Start" TextColor="{Binding textColor}"/>
                                     </StackLayout>
                                 </Grid>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.ProcesoSimoleCommand, Source={x:Reference ListaCategoria}}" CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
                             </Frame>
                         </Grid>
                     </DataTemplate>
