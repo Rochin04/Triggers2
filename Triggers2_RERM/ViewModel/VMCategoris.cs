@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Triggers2_RERM.Model;
 using Triggers2_RERM.ViewModel;
+using Triggers2_RERM.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -49,10 +50,6 @@ namespace Triggers2_RERM.ViewModel
         {
 
         }
-        public void MostrarCategorias()
-        {
-            ListaCategorias = new ObservableCollection<ModelCategoris>(Data.CategorisData.ShowCategoris());
-        }
         public void Selected(ModelCategoris model)
         {
             var index = ListaCategorias.ToList().FindIndex(p => p.description == model.description);
@@ -77,10 +74,15 @@ namespace Triggers2_RERM.ViewModel
                 item.backgroundColor = "#EAEDF6";
             });
         }
+        public void MostrarCategorias()
+        {
+            ListaCategorias = new ObservableCollection<ModelCategoris>(Data.CategorisData.ShowCategoris());
+        }
         #endregion
         #region Comandos
         public ICommand ProcesoAsynCommand => new Command(async () => await ProcesoAsyncrono());
         public ICommand ProcesoSimoleCommand => new Command(MostrarCategorias);
+        public ICommand Seleccionarcomand => new Command<ModelCategoris>((p) => Selected(p));
         #endregion
     }
 }
